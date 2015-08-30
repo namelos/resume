@@ -2,97 +2,74 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[margin, 12pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 
 \setlength{\textwidth}{5.1in}
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont{Heiti SC} 
+\setromanfont{Songti SC}
 \XeTeXlinebreaklocale “zh”
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt % Break line
-
 \newfontfamily{\H}{Songti SC} % Chinese font
 
 \begin{document}
 
-%	NAME AND ADDRESS SECTION
+\moveleft.5\hoffset\centerline{\large\bf 王亦凡} % name
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % horizontal line
 
-\moveleft.5\hoffset\centerline{\large\bf 测试} % name at the top
- 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
-\moveleft.5\hoffset\centerline{测试} % address
-\moveleft.5\hoffset\centerline{City, State 12345}
-\moveleft.5\hoffset\centerline{(000) 111-1111 or (111) 111-1112}
+\moveleft.5\hoffset\centerline{应聘职位：Web前端开发} % header
+\moveleft.5\hoffset\centerline{namelos@outlook.com}
+\moveleft.5\hoffset\centerline{(+86) 185-1109-5150}
 
 \begin{resume}
 
-%	OBJECTIVE SECTION
- 
-\section{职位}  
+\section{教育背景}
 
-测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+东北大学秦皇岛分校，英语专业，本科 \hfill 2010-2014
 
-%	EDUCATION SECTION
+\section{专业技能}
 
-\section{EDUCATION}
-
-{\sl Bachelor of Science,} Interdisciplinary Science \\
-Rensselaer Polytechnic Institute, Troy, NY, expected December 1990 \\
-Concentration: Computer Science \\
-Minor: Management 
- 
-%	COMPUTER SKILLS SECTION
-
-\section{COMPUTER \\ SKILLS} 
-
-{\sl Languages \& Software:} 
-COBOL, IFPS, Focus, Megacalc, Pascal, Modula2, C, APL, SNOBOL, FORTRAN, LISP, SPIRES, BASIC, VSPC Autotab, IBM 370 Assembler, Lotus 1-2-3. \\
-{\sl Operating Systems:} MTS, TSO, Unix. 
- 
-%	PROFESSIONAL EXPERIENCE SECTION
- 
-\section{EXPERIENCE}
-
-{\sl Business Applications Programmer} \hfill Fall 1990 \\
-Allied-Signal Bendix Friction Materials Division, Financial Planning Department, Latham, NY 
-
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Developed four ``user friendly" forecasting systems each of which produces 18 to 139 individual reports. 
-\item Developed or improved almost all IFPS programs used for financial reports. 
+{\sl JavaScript:}
+\begin{itemize} \itemsep -2pt
+  \item 熟悉React以及Flux架构，熟悉React api以及前端router和前后端同构实现。可以构建复杂组件。
+  熟悉ES2015与JSX，同时使用flow做静态检查，可以配合Mocha进行TDD开发。
+  \item 熟悉Node.js(前端自动化工具流，Express)，熟悉JavaScript函数式编程，可以将服务器状
+  态单独抽离以实现更好的扩展性和可维护性。配合Node简单地使用过MongoDB与Redis持久化数据与状态。
+  \item 熟悉jQuery api，编写jQuery插件，以及简单的jQuery实现，可以借助jQuery与Node编写前后端Ajax。
 \end{itemize}
- 
-{\sl Research Programmer} \hfill Summer 1990 \\
-Psychology Department, Rensselaer Polytechnic Institute 
-\begin{itemize} 
-\item Performed computer aided statistical analysis of data. 
-\end{itemize} 
 
-{\sl Assistant Manager} \hfill Summers 1988-89 \\
-Thunder Restaurant, Canton, CT
-\begin{itemize}
-\item Recognized need for, developed, and wrote employee training manual. Performed various duties including cooking, employee training, ordering, and inventory control. 
-\end{itemize} 
+{\sl HTML:}
+\begin{itemize} \itemsep -2pt
+  \item 熟悉DOM文档模型，HTML5，以及HTML5语义化。
+\end{itemize}
 
-%	COMMUNITY SERVICE SECTION
+{\sl CSS:}
+\begin{itemize} \itemsep -2pt
+  \item 熟悉CSS布局，了解CSS3以及flexbox。熟悉Stylus与Sass预处理器，在React中使用Radium内联样式。
+\end{itemize}
 
-\section{COMMUNITY \\ SERVICE}
+{\sl 工具类:}
+\begin{itemize} \itemsep -2pt
+  \item 熟悉*nix系统，常用Emacs + Vim以及简单的shell编程，可以对服务器进行简单的部署运维等。
+\end{itemize}
 
-Organized and directed the 1988 and 1989 Grand Marshall Week \\
-``Basketball Marathon.'' A 24 hour charity event to benefit the Troy Boys Club. Over 250 people participated each year. 
+\section{英语技能}
+{\sl 专业四级}，英语流利，google，stackoverflow重度用户，熟练阅读各种英文文档，在社区论坛和IRC中互相交流。
 
-%	EXTRA-CURRICULAR ACTIVITIES SECTION
+\section{个人页面}
+{\sl 个人主页:} http://namelos.io \\
+{\sl Github:} https://github.com/namelos
 
-\section{EXTRA-CURRICULAR \\ ACTIVITIES} 
+\section{工作经验}
+{\sl 华盛吉瑞科技（天津）有限公司} \hfill 2014.12 \\
+\begin{itemize} \itemsep -2pt
+  \item 负责工程部英语与德语图纸的翻译以及审校工作。
+\end{itemize}
 
-Elected {\it House Manager}, Rho Phi Sorority \\
-Elected {\it Sports Chairman} \\
-Attended Krannet Leadership Conference \\
-Headed delegation to Rho Phi Congress \\
-Junior varsity basketball team \\
-Participant, seven intramural athletic teams 
+\section{业余爱好}
+lisp \& haskell初学者，爱好黑客文化，喜欢新潮技术。喜欢在各种IRC技术频道聊天。
 
 \end{resume}
 \end{document}
